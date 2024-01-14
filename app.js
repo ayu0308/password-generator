@@ -89,6 +89,7 @@ async function copyContent() {
 }
 
 function shufflePassword(array) {
+  //fisher yates algoritham
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     const temp = array[i];
@@ -113,7 +114,7 @@ function handleCheckBoxChange() {
   }
 }
 
-allCheckBox.forEach( (checkbox) => {
+allCheckBox.forEach((checkbox) => {
   checkbox.addEventListener('change', handleCheckBoxChange);
 });
 
@@ -128,7 +129,7 @@ copyBtn.addEventListener('click', () => {
 
 generateBtn.addEventListener('click', () => {
   //none of the checkbox are selected
-  if (checkCount <= 0) return;
+  if (checkCount == 0) return;
 
   //find new password
   if (passwordLength < checkCount) {
