@@ -17,4 +17,5 @@ This is a simple password generator web application built using HTML, Tailwind C
 3. Click the "Generate Password" button to generate a random password.
 4. Click the "Copy to Clipboard" button to copy the generated password.
 
-
+##Deplyment
+-The Weather App is deployed and can be accessed https://weatherapp-by-ayush.netlify.app/.
